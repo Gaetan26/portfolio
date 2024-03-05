@@ -1,0 +1,301 @@
+body{
+    background: #f7f8f9;
+    scroll-behavior: smooth;
+}
+
+
+header,
+main,
+footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header styles */
+header{
+    background-image: url('https://unsplash.com/photos/LJ9KY8pIH3E/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mzh8fGNvZGVyc3xmcnwwfHx8fDE3MDk2NTkwNzl8MA&force=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+header .blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 0;
+}
+
+header section, nav{
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+}
+
+header nav ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header nav ul li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: silver;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+header nav ul li a:focus, header nav ul li a:hover{
+    color: #fff;
+    outline: none;
+    letter-spacing: 2px;
+    transition: .3s;
+    font-size: 25px;
+}
+
+header section{
+    text-align: center;
+    margin-top: 30px;
+}
+
+header section h1{
+    font-family: "Poppins";
+    font-size: 80px;
+    color: #fff;
+}
+
+header section p{
+    font-family: "work sans";
+    font-size: 22px;
+    color: #fff;
+}
+
+header section button{
+    padding: 18px;
+    background: rgba(0,0,0,.5);
+    border: 3px solid #fff;
+    transition: .3s;
+    animation: anim1 1.5s ease-in-out infinite;
+}
+
+@keyframes anim1 {
+    from {
+        text-transform: none;
+        letter-spacing: 0;
+    }
+    to {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+header section button a{
+    text-decoration: none;
+    font-family: "work sans";
+    font-size: 20px;
+    color: #fff;
+}
+
+/* main - technos style */
+main #technos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px ;
+    /* background: blue; */
+}
+
+main #technos h1{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Work sans";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main #technos .content{
+    width: 55%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+main #technos .techno{
+    position: relative;
+}
+
+main #technos .techno img{
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+main #technos .techno h3{
+    font-family: 'poppins';
+    font-size: 25px;
+    text-transform: lowercase;
+}
+
+main #technos .techno p:nth-child(2){
+    font-family: 'work sans';
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+main #technos .techno p:nth-child(3){
+    width: 100%;
+    background: silver;
+    text-align: left;
+    font-family: 'poppins';
+    margin-top: 10px;
+    opacity: .5;
+}
+
+/* main - videos */
+main #videos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px ;
+}
+
+main #videos h1{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Work sans";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main #videos .content{
+    width: 55%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+main #videos .video{
+    position: relative;
+}
+
+main #videos .video iframe{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+main #videos .video p{
+    font-family: "work sans";
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+main #videos .video p a{
+    color: #0082e6;
+    text-decoration: none;
+}
+
+/* main - skills */
+main #skills{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px ;
+}
+
+main #skills h1{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Work sans";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main #skills .content{
+    width: 55%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+/* main #skills .skill .progress{
+    width: 83%;
+    background: green;
+    border-radius: 36px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "poppins";
+    color: silver;
+    font-weight: bold;
+} */
+
+main #skills .skill{
+    position: relative;
+}
+
+main #skills .skill .progress{
+    width: 150px;
+    height: 150px;
+    /*background: green;*/
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+main #skills .skill .progress p{
+    width: 135px;
+    height: 135px;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main #skills .skill p:nth-child(1){
+    font-family: "work sans";
+    font-size: 20px;
+    text-align: center;
+}
+
+main #skills .skill .statut{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    padding: 8px;
+    border-radius: 6px;
+    font-family: "work sans";
+    left: 50%;
+    margin-top: 20px;
+    text-align: center;
+    transform: translateY(-100%) translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+main #skills:hover .skill .statut{
+    transform: translateY(0%) translateX(-50%);
+    opacity: 1;
+    transition: .5s;
+}
